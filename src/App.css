@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --theme-bg-color: rgba(16 18 27 / 40%);
+  --content-bg: rgb(146 151 179 / 13%);
+  --theme-color: #f9fafb;
+ }
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+ }
+
+body{
+  background-image: url("./images/martina-vitakova-1JRwhmqQMeQ-unsplash.jpg");
+  padding: 50px;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.App {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  text-align: left;
+}
+
+.info-container{
+  padding: 30px 20px;
+  margin-right: 10px;
+  color: var(--theme-color);
+  height: fit-content;
+  max-width: 800px;
+  max-height: 860px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 90%;
+  border-radius: 14px;
+  background-color: var(--theme-bg-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form-title{
+  margin: 0;
+  font-weight: 400;
+}
+
+.custom-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-input{
+  margin: 7px 0;
+  padding: 5px;
+  color: #42506B;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  height: 25px;
+  box-shadow: 0 3px 3px #0000004b;
+}
+
+.custom-btn{
+  padding: 7px;
+  width: 75px;
+  font-size: 15px;
+  color: #42506B;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: 0.3s ease-out;
+  box-shadow: 0 4px 5px #0000004b;
+}
+
+.custom-btn:hover{
+  transform: scale(1.03);
+  box-shadow: 0 4px 5px #0000004b;
+}
+
+.task-item{
+  margin: 5px 0;
+  padding: 5px;
+  background-color: var(--content-bg);
+  color: var(--theme-color);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  transition: 0.3s ease-in-out;
+}
+
+.task-item:hover{
+  transform: scale(1.03);
+  background-color: var(--theme-color);
+  color: #42506B;
+  
+}
+
+.icon-img{
+  width: 18px;
+  height: 18px;
+}
+
+.task-text{
+  text-align: left;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.btn-group{
+  margin-left: auto;
+}
+
+.btn{
+  margin: 0 5px;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.btn:hover{
+  transform: scale(1.06)
+}
+
+.focus-task{
+  margin: 0;
+  font-size: 25px;
+  color: var(--theme-color);
+  text-align: center;
+}
+
+.counter-container{
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.circle{
+  color: var(--theme-color);
+  background-color: var(--theme-bg-color);
+  border: none;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 5px #0000004b;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.circle:hover{
+  transform: scale(1.03);
+}
+
+.counter{
+  font-size: 75px;
+}
+
+.status{
+  margin: 15px 0;
+  font-size: 25px;
+  color: var(--theme-color);
+  text-align: center;
+}
+
+.pomodoro-buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pomodoro-btn{
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #42506B;
+  font-size: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 5px #0000004b;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.pomodoro-btn:hover{
+  transform: scale(1.05);
+}
+
+.pomodoro-form{
+  border-radius: 14px;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+  background-color: var(--theme-bg-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.input-2{
+  text-align: center;
+}
+
+.col-half{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label{
+  margin-right: 15px;
+  color: var(--theme-color);
+}
+
+.pomodoro-btn-2{
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+  color: #42506B;
+  background-color: white;
+  font-size: 20px;
+  padding: 5px;
+  width: 125px;
+  box-shadow: 0 4px 5px #0000004b;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.pomodoro-btn-2:hover{
+  transform: scale(1.05);
+}
